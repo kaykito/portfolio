@@ -93,7 +93,7 @@ const Intro = () => {
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
                   Interest:
                 </span>
-                <span>Musik</span>
+                <span>Musik, Sport</span>
               </li>
               <li className="m-0">
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
