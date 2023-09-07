@@ -9,7 +9,7 @@ const type = {
   ANIMATION: "ANIMATION",
   MODAL: "MODAL",
   SERVICEMODAL: "SERVICEMODAL",
-  NEWSMODAL: "NEWSMODAL",
+  // NEWSMODAL: "NEWSMODAL",
   PORTFOLIODETAILSMODAL: "PORTFOLIODETAILSMODAL",
 };
 const {
@@ -17,7 +17,7 @@ const {
   ANIMATION,
   MODAL,
   SERVICEMODAL,
-  NEWSMODAL,
+  // NEWSMODAL,
   PORTFOLIODETAILSMODAL,
 } = type;
 
@@ -27,14 +27,14 @@ const initialState = {
   animation: "fadeInLeft",
   modal: false,
   serviceModal: null,
-  newsModal: null,
+  // newsModal: null,
   portfolioDetailsModal: null,
   menus: [
     { id: 1, name: "Home", href: "home" },
     { id: 2, name: "about", href: "about" },
     { id: 3, name: "service", href: "service" },
     { id: 4, name: "portfolio", href: "portfolio" },
-    { id: 5, name: "news", href: "news" },
+    // { id: 5, name: "news", href: "news" },
     { id: 6, name: "contact", href: "contact" },
   ],
 };
@@ -63,11 +63,11 @@ const reducer = (state, action) => {
         ...state,
         serviceModal: payload,
       };
-    case NEWSMODAL:
-      return {
-        ...state,
-        newsModal: payload,
-      };
+    // case NEWSMODAL:
+    //   return {
+    //     ...state,
+    //     newsModal: payload,
+    //   };
     case PORTFOLIODETAILSMODAL:
       return {
         ...state,
@@ -109,12 +109,12 @@ const TokyoState = ({ children }) => {
       payload: value,
     });
   }, []);
-  const setNewsModal = useCallback((value) => {
-    dispatch({
-      type: NEWSMODAL,
-      payload: value,
-    });
-  }, []);
+  // const setNewsModal = useCallback((value) => {
+  //   dispatch({
+  //     type: NEWSMODAL,
+  //     payload: value,
+  //   });
+  // }, []);
   const setPortfolioDetailsModal = useCallback((value) => {
     dispatch({
       type: PORTFOLIODETAILSMODAL,
@@ -143,8 +143,8 @@ const TokyoState = ({ children }) => {
         modalToggle,
         serviceModal,
         setServiceModal,
-        newsModal,
-        setNewsModal,
+        // newsModal,
+        // setNewsModal,
         portfolioDetailsModal,
         setPortfolioDetailsModal,
       }}

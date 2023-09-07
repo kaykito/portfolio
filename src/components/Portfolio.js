@@ -7,8 +7,8 @@ import SectionTitle from "./SectionTitle";
 const detailData = [
   {
     id: 1,
-    thumbnail: "assets/img/portfolio/7.jpg",
-    title: "Selena Gomez",
+    thumbnail: "assets/img/portfolio/1.gif",
+    title: "JDIH DPRD",
     text: [
       "We live in a world where we need to move quickly and iterate on our ideas as flexibly as possible. Building mockups strikes the ideal balance between true-life representation of the end product and ease of modification.",
       "Mockups are useful both for the creative phase of the project - for instance when you're trying to figure out your user flows or the proper visual hierarchy - and the production phase when they will represent the target product. Making mockups a part of your creative and development process allows you to quickly and easily ideate.",
@@ -131,6 +131,15 @@ const Portfolio = () => {
                     <a
                       className="text-[#767676] inline-block font-medium font-montserrat transition-all duration-300 hover:text-black"
                       href="#"
+                      onClick={handleFilterKeyChange("detail")}
+                    >
+                      Web App 
+                    </a>
+                  </li>
+                  <li className="mr-[25px] inline-block">
+                    <a
+                      className="text-[#767676] inline-block font-medium font-montserrat transition-all duration-300 hover:text-black"
+                      href="#"
                       onClick={handleFilterKeyChange("vimeo")}
                     >
                       Vimeo
@@ -149,9 +158,9 @@ const Portfolio = () => {
                     <a
                       className="text-[#767676] inline-block font-medium font-montserrat transition-all duration-300 hover:text-black"
                       href="#"
-                      onClick={handleFilterKeyChange("soundcloud")}
+                      onClick={handleFilterKeyChange("spotify")}
                     >
-                      Soundcloud
+                      Spotify
                     </a>
                   </li>
                   <li className="mr-[25px] inline-block">
@@ -161,15 +170,6 @@ const Portfolio = () => {
                       onClick={handleFilterKeyChange("image")}
                     >
                       Image
-                    </a>
-                  </li>
-                  <li className="inline-block">
-                    <a
-                      className="text-[#767676] inline-block font-medium font-montserrat transition-all duration-300 hover:text-black"
-                      href="#"
-                      onClick={handleFilterKeyChange("detail")}
-                    >
-                      Detail
                     </a>
                   </li>
                 </ul>
@@ -206,12 +206,12 @@ const Portfolio = () => {
                 <div className="inner w-full h-auto clear-both float-left overflow-hidden relative">
                   <div
                     className="entry tokyo_tm_portfolio_animation_wrap"
-                    data-title="Ashley Flores"
+                    data-title="Hindia - Untuk Apa? (Lo-Fi Cover) Prod By SNTAS"
                     data-category="Youtube"
                   >
                     <a
                       className="popup-youtube"
-                      href="https://www.youtube.com/watch?v=7e90gBu4pas"
+                      href="https://www.youtube.com/watch?v=irGn1If_RmY"
                     >
                       <img
                         className="opacity-0 min-w-full"
@@ -220,22 +220,22 @@ const Portfolio = () => {
                       />
                       <div
                         className="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                        data-img-url="assets/img/portfolio/6.jpg"
+                        data-img-url="assets/img/portfolio/untuk-apa.jpg"
                       />
                     </a>
                   </div>
                 </div>
               </li>
-              <li className="soundcloud mb-[40px] float-left w-1/3 pl-[40px] item__">
+              <li className="youtube mb-[40px] float-left w-1/3 pl-[40px] item__">
                 <div className="inner w-full h-auto clear-both float-left overflow-hidden relative">
                   <div
                     className="entry tokyo_tm_portfolio_animation_wrap"
-                    data-title="Derek Smith"
-                    data-category="Soundcloud"
+                    data-title="Slander ft. Dylan Matthew - Love Is Gone (Lo-Fi Cover) Prod by SNTAS"
+                    data-category="Youtube"
                   >
                     <a
-                      className="soundcloude_link mfp-iframe audio"
-                      href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F159967086&show_artwork=true&maxwidth=1020&maxheight=1000&auto_play=1"
+                      className="popup-youtube"
+                      href="https://www.youtube.com/watch?v=70vpkXQPEUg"
                     >
                       <img
                         className="opacity-0 min-w-full"
@@ -244,7 +244,31 @@ const Portfolio = () => {
                       />
                       <div
                         className="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                        data-img-url="assets/img/portfolio/4.jpg"
+                        data-img-url="assets/img/portfolio/love-gone.jpg"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li className="spotify mb-[40px] float-left w-1/3 pl-[40px] item__">
+                <div className="inner w-full h-auto clear-both float-left overflow-hidden relative">
+                  <div
+                    className="entry tokyo_tm_portfolio_animation_wrap"
+                    data-title="Sntas EP"
+                    data-category="Spotify"
+                  >
+                    <a
+                      className="soundcloude_link mfp-iframe audio"
+                      href="https://open.spotify.com/embed/artist/1gtUD7WxJAjQrnnigP58wa?utm_source=generator&theme=0"
+                    >
+                      <img
+                        className="opacity-0 min-w-full"
+                        src="assets/img/thumbs/1-1.jpg"
+                        alt="image"
+                      />
+                      <div
+                        className="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
+                        data-img-url="assets/img/portfolio/sntas.jpg"
                       />
                     </a>
                   </div>
@@ -293,7 +317,7 @@ const Portfolio = () => {
                       />
                       <div
                         className="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                        data-img-url="assets/img/portfolio/7.jpg"
+                        data-img-url="assets/img/portfolio/jdihdprd.gif"
                       />
                     </a>
                   </div>
